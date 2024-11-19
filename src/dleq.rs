@@ -3,6 +3,8 @@ use k256::elliptic_curve::{Field, PrimeField};
 use rand_core::OsRng;
 use sha2::{Sha256, Digest};
 
+#[derive(Debug, Clone)]
+
 pub struct DLEQProof {
     c: Scalar,
     s: Scalar,
